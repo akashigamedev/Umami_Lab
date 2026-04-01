@@ -1,4 +1,4 @@
-import { Link, LinkProps } from "react-router-dom";
+import { Link, LinkProps, useNavigate, useLocation } from "react-router-dom";
 import { ReactNode, MouseEvent } from "react";
 
 interface ScrollLinkProps extends Omit<LinkProps, "to"> {
@@ -7,12 +7,22 @@ interface ScrollLinkProps extends Omit<LinkProps, "to"> {
 }
 
 const ScrollLink = ({ to, children, ...props }: ScrollLinkProps) => {
+    const navigate = useNavigate();
+    const location = useLocation();
+
     const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
 
-        const section = document.getElementById(to);
-        if (section) {
-            section.scrollIntoView({ behavior: "smooth" });
+        if (location.pathname !== "/") {
+            navigate("/");
+            setTimeout(() => {
+                document.getElementById(to)?.scrollIntoView({ behavior: "smooth" });
+            }, 100);
+        } else {
+            const section = document.getElementById(to);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
         }
     };
 

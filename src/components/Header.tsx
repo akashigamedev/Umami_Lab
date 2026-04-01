@@ -41,6 +41,12 @@ const Header = () => {
               Menu
             </ScrollLink>
             <ScrollLink
+              to="blog"
+              className="text-gray-700 hover:text-orange-500 transition-colors font-medium"
+            >
+              Blog
+            </ScrollLink>
+            <ScrollLink
               to="contact"
               className="text-gray-700 hover:text-orange-500 transition-colors font-medium"
             >
