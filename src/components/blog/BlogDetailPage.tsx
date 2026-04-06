@@ -1,8 +1,9 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState, useCallback } from "react";
 import { createPortal } from "react-dom";
 import { ArrowLeft, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { getBlogBySlug, type BlogImage } from "../../data/blogData";
+import ScrollLink from "../ScrollLink";
 
 function ImageLightbox({
   images,
@@ -105,12 +106,12 @@ const BlogDetailPage = () => {
         <p className="text-gray-600 mb-8">
           The blog post you're looking for doesn't exist.
         </p>
-        <Link
-          to="/"
+        <ScrollLink
+          to="blog"
           className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-colors font-medium"
         >
           Back to Home
-        </Link>
+        </ScrollLink>
       </div>
     );
   }
@@ -119,13 +120,13 @@ const BlogDetailPage = () => {
     <article className="min-h-screen bg-white">
       {/* Back navigation */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-6">
-        <Link
-          to="/"
+        <ScrollLink
+          to="blog"
           className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-600 font-medium transition-colors"
         >
           <ArrowLeft size={18} />
           Back to Home
-        </Link>
+        </ScrollLink>
       </div>
 
       {/* Hero image */}
@@ -224,12 +225,12 @@ const BlogDetailPage = () => {
           <p className="text-lg text-gray-600 mb-8">
             Experience the best of Delhi's street food culture at Umami Lab.
           </p>
-          <Link
-            to="/"
+          <ScrollLink
+            to="blog"
             className="inline-block bg-orange-500 text-white px-8 py-4 rounded-full hover:bg-orange-600 hover:shadow-xl transition-all duration-300 font-medium text-lg transform hover:scale-105"
           >
             Explore Umami Lab
-          </Link>
+          </ScrollLink>
         </div>
       </div>
     </article>

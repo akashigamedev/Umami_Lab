@@ -16,7 +16,7 @@ const ScrollLink = ({ to, children, ...props }: ScrollLinkProps) => {
         if (location.pathname !== "/") {
             navigate("/");
             setTimeout(() => {
-                document.getElementById(to)?.scrollIntoView({ behavior: "smooth" });
+                document.getElementById(to)?.scrollIntoView({ behavior: "instant" });
             }, 100);
         } else {
             const section = document.getElementById(to);

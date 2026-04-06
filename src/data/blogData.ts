@@ -26,13 +26,11 @@ export const blogPosts: BlogPost[] = [
       "Street Food of Jama Masjid: Where Delhi Gets Bold, Smoky, and Unforgettable",
     excerpt:
       "If Chandni Chowk is the heart of Delhi's street food, then the area around Jama Masjid is its wild, untamed soul. This is where the city drops all pretenses and serves food the way it's meant to be.",
-    coverImage: "/blog/jama-masjid/close-up-of-food.jpg",
+    coverImage: "/blog/jama-masjid/cooking-food.webp",
     images: [
+      { src: "/blog/jama-masjid/cooking-food.webp", alt: "Cooking food at Jama Masjid" },
+      { src: "/blog/jama-masjid/food.webp", alt: "Jama Masjid street food" },
       { src: "/blog/jama-masjid/shop-front.webp", alt: "Jama Masjid shop front" },
-      {
-        src: "/blog/jama-masjid/close-up-of-food.jpg",
-        alt: "Close up of Jama Masjid street food",
-      },
     ],
     videoSrc: "/blog/jama-masjid/video.mp4",
     videoPoster: "/blog/jama-masjid/poster.jpg",
@@ -90,17 +88,11 @@ export const blogPosts: BlogPost[] = [
     title: "Street Food of Karol Bagh: Delhi's Perfect Balance of Chaos and Comfort",
     excerpt:
       "Not every great food story in Delhi needs the madness of Old Delhi. Sometimes, you want incredible street food without fighting through shoulder-to-shoulder crowds — and that's exactly where Karol Bagh steps in.",
-    coverImage: "/blog/karol-bagh/market-wideshot.webp",
+    coverImage: "/blog/karol-bagh/crowd-in-dark.webp",
     images: [
-      {
-        src: "/blog/karol-bagh/market-wideshot.webp",
-        alt: "Karol Bagh market wideshot",
-      },
-      {
-        src: "/blog/karol-bagh/close-up-of-food.webp",
-        alt: "Close up of Karol Bagh street food",
-      },
-      { src: "/blog/karol-bagh/shop-front.webp", alt: "Karol Bagh shop front" },
+      { src: "/blog/karol-bagh/crowd-in-dark.webp", alt: "Karol Bagh crowd at night" },
+      { src: "/blog/karol-bagh/crowd-in-light.webp", alt: "Karol Bagh crowd in daylight" },
+      { src: "/blog/karol-bagh/metro-road.webp", alt: "Karol Bagh metro road" },
     ],
     videoSrc: "/blog/karol-bagh/video.mp4",
     videoPoster: "/blog/karol-bagh/poster.jpg",
@@ -163,24 +155,12 @@ export const blogPosts: BlogPost[] = [
     title: "A Walk Through Paranthe Wali Gali: Where Delhi Fries Its Soul in Ghee",
     excerpt:
       "Tucked inside the chaotic charm of Chandni Chowk lies a narrow lane that has been feeding generations with unapologetic indulgence — Paranthe Wali Gali. You don't just visit this place; you experience it.",
-    coverImage: "/blog/parathe-wali-gali/close-up-of-food.webp",
+    coverImage: "/blog/parathe-wali-gali/crowd.webp",
     images: [
-      {
-        src: "/blog/parathe-wali-gali/main-shop-front.webp",
-        alt: "Main shop front at Paranthe Wali Gali",
-      },
-      {
-        src: "/blog/parathe-wali-gali/close-up-of-food.webp",
-        alt: "Close up of parathas",
-      },
-      {
-        src: "/blog/parathe-wali-gali/location-sign-lamp.webp",
-        alt: "Paranthe Wali Gali location sign",
-      },
-      {
-        src: "/blog/parathe-wali-gali/shop-front.webp",
-        alt: "Shop front at Paranthe Wali Gali",
-      },
+      { src: "/blog/parathe-wali-gali/crowd.webp", alt: "Crowd at Paranthe Wali Gali" },
+      { src: "/blog/parathe-wali-gali/location-direction-board.webp", alt: "Paranthe Wali Gali direction board" },
+      { src: "/blog/parathe-wali-gali/shop-front.webp", alt: "Shop front at Paranthe Wali Gali" },
+      { src: "/blog/parathe-wali-gali/shop-side.webp", alt: "Side view of shop at Paranthe Wali Gali" },
     ],
     videoSrc: "/blog/parathe-wali-gali/video.mp4",
     videoPoster: "/blog/parathe-wali-gali/poster.jpg",
